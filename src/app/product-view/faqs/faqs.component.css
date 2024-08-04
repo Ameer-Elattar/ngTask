@@ -1,0 +1,5 @@
+.accordion-button {
+  box-shadow: none;
+  background-color: var(--primary-color);
+  color: var(--secondry-color);
+}

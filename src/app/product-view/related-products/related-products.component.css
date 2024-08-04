@@ -1,0 +1,15 @@
+.checked {
+  color: orange;
+}
+img {
+  height: 300px;
+}
+.card {
+  width: 18rem !important;
+}
+
+@media (max-width: 990px) {
+  .card {
+    width: 75% !important;
+  }
+}

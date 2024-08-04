@@ -1,0 +1,23 @@
+<div>
+  <h3 class="ms-4">See Also</h3>
+  <div
+    class="d-flex justify-content-evenly align-items-center gap-3 flex-column flex-sm-column flex-lg-row"
+  >
+    @for (product of similarProducts; track product.id) {
+    <div class="card">
+      <img [src]="product.imageURL" class="card-img-top" alt="..." />
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ product.productName }}</h5>
+        <div>
+          @for (star of [1,2,3,4,5]; track $index) {
+          <i
+            class="fa-solid fa-star"
+            [class.checked]="$index + 1 <= product.rate"
+          ></i>
+          }
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

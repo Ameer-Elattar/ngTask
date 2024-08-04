@@ -1,0 +1,6 @@
+.indicator {
+  transition: all 1.5s;
+}
+.indicator:hover {
+  width: 20%;
+}

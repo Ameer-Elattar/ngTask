@@ -1,0 +1,12 @@
+.checked {
+  color: orange;
+}
+small {
+  font-size: 12px;
+}
+.fa-magnifying-glass {
+  font-size: 14px;
+}
+ul > li {
+  line-height: 1.6;
+}

@@ -1,0 +1,28 @@
+<h3 class="mx-4">FAQS</h3>
+<div class="accordion mx-4" id="faqs">
+  @for (question of questions; track question.id) {
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#collapse' + question.id"
+        aria-expanded="false"
+        [attr.aria-controls]="'collapse' + question.id"
+      >
+        {{ question.question }}
+      </button>
+    </h2>
+    <div
+      [id]="'collapse' + question.id"
+      class="accordion-collapse collapse"
+      data-bs-parent="#faqs"
+    >
+      <div class="accordion-body">
+        {{ question.answer }}
+      </div>
+    </div>
+  </div>
+  }
+</div>
